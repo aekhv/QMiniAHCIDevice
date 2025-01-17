@@ -20,7 +20,7 @@ public:
 
     quint8 statusRegister() const { return m_status; }
     quint8 errorRegister() const { return m_error; }
-    quint64 lastErrorLBA() const { return m_lba; }
+    quint64 firstErrorLBA() const { return m_lba; }
 
     bool success() const { return (m_status & 0x81) == 0; }
     bool busyBitIsSet() const { return (m_status & 0x80) == 0x80; }

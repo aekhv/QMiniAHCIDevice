@@ -395,7 +395,7 @@ void MainWindow::readTest()
 
         if (status.ata().errorBitIsSet()) {
             output(QString("Error bit is set! Last error LBA is %1.")
-                   .arg(status.ata().lastErrorLBA()));
+                   .arg(status.ata().firstErrorLBA()));
             return;
         }
 
