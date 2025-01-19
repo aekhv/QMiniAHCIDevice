@@ -56,7 +56,7 @@ QString QMiniAHCISMARTAttribute::description() const
     case 0x0C:
         return "Power Cycle Count";
     case 0xB8:
-        return "End-to-End Error";
+        return "RAM Parity Error Count";
     case 0xBB:
         return "Reported Uncorrectable Errors";
     case 0xBC:
